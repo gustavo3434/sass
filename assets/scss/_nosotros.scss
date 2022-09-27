@@ -1,0 +1,28 @@
+$grisN: rgba(255,255,255, 0.7);
+                        /* Nosotros */
+ .nosotros{
+    background-image: url(/multimedia/playa.jpg);/* Uso de Background Img*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+        padding: 50px 30px;
+	    margin-top: 50px;
+    h3{
+        text-align: center; 
+        background-color: $grisN;
+        font-size: 1.5rem;
+        word-spacing: 2px;
+        width: 100%;
+        border: inset 2px gray ;
+        border-bottom: inset 0px $grisN ;
+    }
+    p{
+        font-size: 1.5rem;
+        background-color: $grisN;
+        width: 100%;
+        border: outset 2px gray;
+    }
+}
+                                /*---------------------*/

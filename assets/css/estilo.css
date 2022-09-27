@@ -1,0 +1,538 @@
+/* Galeria Principal (Index) */
+#galeria {
+  display: grid;
+  grid-template-areas: "uno uno" "dos tres" "dos cuatro";
+  grid-template-columns: 50% auto;
+  grid-template-rows: auto;
+}
+#galeria .contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+#galeria .contenedor .centrado {
+  position: absolute;
+  overflow: unset;
+}
+#galeria .contenedor .centrado:hover {
+  transform: translateY(-40px);
+  transition: 0.7s;
+}
+#galeria .contenedor .do {
+  top: 50%;
+  left: 20%;
+}
+#galeria .contenedor .tre {
+  top: 50%;
+  left: 17%;
+}
+#galeria .contenedor .cuatr {
+  top: 50%;
+  left: 30%;
+}
+#galeria .uno {
+  grid-area: uno;
+}
+#galeria .dos {
+  grid-area: dos;
+}
+#galeria .tres {
+  grid-area: tres;
+}
+#galeria .cuatro {
+  grid-area: cuatro;
+}
+#galeria div a img {
+  opacity: 0.91;
+}
+#galeria div a img:hover {
+  opacity: 0.7;
+  transform: scale(0.98, 0.98);
+}
+#galeria div div a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+#galeria div div a:hover {
+  font-size: 1.9rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/*-----------------------*/
+/*Galeria de las diferentes secciones*/
+.galeria_ {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.galeria_ .contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.galeria_ div {
+  box-shadow: 3px 5px 10px black;
+  margin: 5px;
+  width: 30%;
+  height: 350px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.galeria_ div a {
+  text-decoration: none;
+  color: black;
+}
+.galeria_ div a:hover {
+  color: rgba(0, 0, 0, 0.62);
+}
+.galeria_ div img {
+  width: 75%;
+  margin: 12%;
+  border-style: double;
+  color: rgba(128, 128, 128, 0.215);
+  box-shadow: 5px 8px 12px black;
+  cursor: pointer;
+}
+.galeria_ div img:hover {
+  border-style: double;
+  color: black;
+  transform: scale(1.1, 1.1);
+  transition: all 0.5s ease-in-out;
+  box-shadow: 18px 20px 60px black;
+}
+.galeria_ div div {
+  height: 8%;
+  width: 40%;
+}
+
+/*--------------------------------*/
+/* Formulario de promociones */
+.registro {
+  text-align: center;
+  align-content: center;
+  line-height: 3rem;
+  width: 88%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 6%;
+  background-color: white;
+  border: solid black 3px;
+}
+.registro h2 {
+  font-size: 2.2rem;
+}
+.registro .email {
+  position: relative;
+  left: 5px;
+  width: 50%;
+  margin-bottom: 5%;
+}
+.registro .enviar {
+  position: relative;
+  left: 20px;
+  margin-bottom: 5%;
+}
+
+/*---------------------*/
+/* Formulario consulta */
+.consultas {
+  padding: 1rem;
+}
+.consultas div {
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 2px 2px 4px black;
+}
+.consultas fieldset legend {
+  text-align: center;
+}
+.consultas fieldset legend div {
+  display: inline-block;
+}
+.consultas label {
+  display: block;
+  margin-bottom: 1rem;
+  width: 40%;
+}
+.consultas input {
+  display: block;
+  margin-bottom: 1rem;
+  width: 40%;
+}
+.consultas textarea {
+  display: block;
+  margin-bottom: 1rem;
+  width: 40%;
+}
+
+/*---------------------*/
+/* Footer*/
+footer {
+  background-color: rgba(128, 128, 128, 0.215);
+}
+
+.ig img {
+  position: relative;
+  width: 30px;
+  left: 43%;
+  top: 32px;
+}
+
+.face img {
+  position: relative;
+  width: 30px;
+  left: 55%;
+}
+
+.cent_footer {
+  text-align: center;
+  line-height: 4rem;
+  color: black;
+}
+.cent_footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.medios_pago {
+  background-color: rgba(128, 128, 128, 0.215);
+  padding: 0.5rem;
+}
+.medios_pago img {
+  display: inline-block;
+  width: 50px;
+  margin: 0.5rem;
+}
+
+/*---------------------------------------*/
+/* Logo de WhatsApp flotante */
+.wsp {
+  position: fixed;
+  bottom: 0;
+  left: 1030px;
+}
+
+.logo {
+  width: 50px;
+}
+
+/*-------------------------------*/
+/* Nosotros */
+.nosotros {
+  background-image: url(/multimedia/playa.jpg); /* Uso de Background Img*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  padding: 50px 30px;
+  margin-top: 50px;
+}
+.nosotros h3 {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  word-spacing: 2px;
+  width: 100%;
+  border: inset 2px gray;
+  border-bottom: inset 0px rgba(255, 255, 255, 0.7);
+}
+.nosotros p {
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  border: outset 2px gray;
+}
+
+/*---------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-dg {
+  background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.7), black, black);
+}
+
+.centrar {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.item {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.item:hover {
+  font-size: 1.2rem;
+}
+
+.tit {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.titulo:hover {
+  font-size: 1.3rem;
+}
+
+.sub-tit {
+  margin: 5px;
+}
+
+.sep {
+  margin-top: 4rem;
+  text-align: center;
+  line-height: 4rem;
+  color: black;
+}
+
+/* Indice con filtros */
+.indice {
+  display: grid;
+  margin-top: 3.5rem;
+  grid-template-areas: "cat sub_nav orden";
+  grid-template-columns: 60% 20% 20%;
+  grid-template-rows: auto;
+  border: solid rgba(128, 128, 128, 0.215) 1.5px;
+}
+.indice .cat { /* Indice */
+  grid-area: cat;
+}
+.indice .area-sub-menu { /* Sub menu para las categorias de productos  */
+  grid-area: sub_nav;
+  border: solid rgba(128, 128, 128, 0.215) 1.5px;
+  height: 102%;
+}
+.indice .orden { /* Ordenamiento de productos  */
+  grid-area: orden;
+  height: 40px;
+}
+.indice .orden .ord {
+  height: 124%;
+}
+
+/* -------------- */
+/* ----------------- */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 5px;
+}
+
+/* Indice Promocion seccion Oferta*/
+.producto {
+  position: absolute;
+  background-color: red;
+  font-weight: bold;
+  color: white;
+  top: -1%;
+  left: -2%;
+}
+
+.titu { /*Indice seccion ofertas*/
+  margin-top: 7rem;
+  color: red;
+}
+
+.tit_ofer {
+  color: red;
+}
+
+/*--------------------*/
+/* Forma Pago*/
+.forma_pago {
+  text-align: center;
+  width: 90%;
+  margin: 2rem;
+  padding: 1rem;
+}
+.forma_pago ul li {
+  font-weight: bold;
+  list-style-type: square;
+}
+
+/*---------------------*/
+/*Responsive > 1024px*/
+/*Responsive < 960px*/
+@media screen and (max-width: 960px) {
+  /*Galeria y Indice Promocion seccion Oferta*/
+  .galeria_ div div {
+    height: 8%;
+    width: 60%;
+  }
+  .galeria_ div img {
+    width: 75%;
+    margin: 12%;
+    margin-top: 20%;
+  }
+}
+/*Responsive < 768px*/
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 3rem;
+  }
+  /*Indice y filtros*/
+  .indice {
+    display: grid;
+    margin-top: 3.5rem;
+    grid-template-areas: "cat sub_nav orden";
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: auto;
+    border: solid rgba(128, 128, 128, 0.215) 1px;
+  }
+  /* Galeria Principal Index*/
+  #galeria {
+    display: grid;
+    grid-template-areas: "uno" "dos" "tres" "cuatro";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  #galeria .centrado {
+    position: absolute;
+    overflow: unset;
+  }
+  #galeria .centrado:hover {
+    transform: translateY(-40px);
+    transition: 0.7s;
+  }
+  #galeria .do {
+    top: 60%;
+    left: 20%;
+  }
+  #galeria .tre {
+    top: 50%;
+    left: 20%;
+  }
+  #galeria .cuatr {
+    top: 60%;
+    left: 30%;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+  /*Galeria e Indice Promocion seccion Oferta*/
+  .galeria_ div {
+    box-shadow: 3px 5px 10px black;
+    margin: 5px;
+    width: 40%;
+    height: 45%;
+  }
+  .galeria_ div div {
+    height: 10%;
+    width: 60%;
+  }
+  .galeria_ div img {
+    width: 75%;
+    margin: 12%;
+    margin-top: 25%;
+  }
+  /*---------------------*/
+  .consultas label, .consultas input, .consultas textarea {
+    width: 60%;
+  }
+  .nosotros p {
+    font-size: 1rem;
+  }
+  /* Logos de IG FC del Footer*/
+  .ig img {
+    left: 42%;
+  }
+  .face img {
+    left: 55%;
+  }
+}
+/*Responsive < 450px*/
+@media screen and (max-width: 450px) {
+  main {
+    margin-top: 3rem;
+  }
+  /* Galeria Principal Index*/
+  #galeria .contenedor .centrado:hover {
+    display: none;
+  }
+  #galeria .contenedor .do {
+    top: 50%;
+    left: 10%;
+  }
+  #galeria .contenedor .tre {
+    top: 50%;
+    left: 10%;
+  }
+  #galeria .contenedor .cuatr {
+    top: 50%;
+    left: 20%;
+  }
+  .carr {
+    height: 350px;
+  }
+  .uno img {
+    height: 350px;
+  }
+  /*Indice y filtros*/
+  .indice {
+    display: grid;
+    margin-top: 3.5rem;
+    grid-template-areas: "orden sub_nav";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    border: solid rgba(128, 128, 128, 0.215) 1px;
+  }
+  .indice .cat { /* Ordenamiento de productos  */
+    display: none;
+    height: 40px;
+  }
+  /*Galeria y Indice Promocion seccion Oferta*/
+  .galeria_ div {
+    width: 100%;
+    height: 10%;
+    padding: 2px;
+  }
+  .galeria_ div div {
+    height: 10%;
+    width: 50%;
+  }
+  .galeria_ div img {
+    width: 75%;
+    margin: 10%;
+    border-style: double;
+    color: rgba(128, 128, 128, 0.215);
+    box-shadow: 5px 8px 12px black;
+    cursor: pointer;
+  }
+  /*--------------------*/
+  /* Logos de IG FC del Footer*/
+  .ig img {
+    left: 40%;
+  }
+  .face img {
+    left: 55%;
+  }
+  /*Nosotros*/
+  .nosotros {
+    background-image: url(../multimedia/playa.jpg); /* Uso de Background Img*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    padding: 50px 30px;
+    margin-top: 50px;
+  }
+  .nosotros p {
+    font-size: 0.5rem;
+    line-height: 35px;
+  }
+}/*# sourceMappingURL=estilo.css.map */
