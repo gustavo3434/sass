@@ -409,15 +409,15 @@ h2 {
   }
   #galeria .do {
     top: 60%;
-    left: 20%;
+    left: 25%;
   }
   #galeria .tre {
     top: 50%;
-    left: 20%;
+    left: 25%;
   }
   #galeria .cuatr {
     top: 60%;
-    left: 30%;
+    left: 35%;
   }
   img {
     display: block;
@@ -465,15 +465,15 @@ h2 {
   }
   #galeria .contenedor .do {
     top: 50%;
-    left: 15%;
+    left: 10%;
   }
   #galeria .contenedor .tre {
     top: 50%;
-    left: 15%;
+    left: 10%;
   }
   #galeria .contenedor .cuatr {
     top: 50%;
-    left: 25%;
+    left: 20%;
   }
   .carr {
     height: 350px;
