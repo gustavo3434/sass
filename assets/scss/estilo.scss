@@ -31,8 +31,10 @@ body{
 .tit{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.titulo:hover{
-    font-size: 1.3rem;
+.titulo{
+    &:hover{
+        font-size: 1.3rem;
+    }
 }
 .sub-tit{
     margin: 5px;
@@ -109,8 +111,14 @@ h2{
 }
                                 /*---------------------*/
                                 /*Responsive > 1024px*/
-@media screen and (min-width:1024px)
+@media screen and (min-width:1150px)
 {
+/*Galeria de las diferentes secciones*/
+    .galeria_{            
+        div{
+            height: 40%;
+        }
+    }
 }
                                 /*Responsive < 960px*/
 @media screen and (max-width:960px) 
@@ -179,10 +187,11 @@ h2{
     
     /*Galeria e Indice Promocion seccion Oferta*/
     .galeria_{
+        margin-left: 15%;
         div{
             box-shadow: 3px 5px 10px black;
             margin: 5px;
-            width: 40%;
+            width: 45%;
             height: 45%;
             div{
                 height: 10%;
@@ -277,6 +286,7 @@ h2{
     }
     /*Galeria y Indice Promocion seccion Oferta*/
     .galeria_{
+        margin-left: 15%;
         div{
             width: 100%;
             height: 10%;

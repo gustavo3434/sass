@@ -1,6 +1,12 @@
 $grisN: rgba(255,255,255, 0.7);
                         /* Nosotros */
- .nosotros{
+.hn{
+    background-color: $grisN;
+    border: inset 2px gray ;
+    font-size: 1.5rem;
+    width: 100%;
+}
+.nosotros{
     background-image: url(/multimedia/playa.jpg);/* Uso de Background Img*/
     background-attachment: fixed;
     background-position: center;
@@ -10,18 +16,13 @@ $grisN: rgba(255,255,255, 0.7);
         padding: 50px 30px;
 	    margin-top: 50px;
     h3{
+        @extend .hn;
         text-align: center; 
-        background-color: $grisN;
-        font-size: 1.5rem;
         word-spacing: 2px;
-        width: 100%;
-        border: inset 2px gray ;
         border-bottom: inset 0px $grisN ;
     }
     p{
-        font-size: 1.5rem;
-        background-color: $grisN;
-        width: 100%;
+        @extend .hn;
         border: outset 2px gray;
     }
 }
