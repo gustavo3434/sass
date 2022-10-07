@@ -4,24 +4,28 @@
     align-content: center;
     line-height: 3rem;
     width: 88%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
     margin-left: 6%;
     background-color: white;
-    border: solid black 3px;
     h2{
-        font-size: 2.2rem;
+        font-size: 2.4rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    p{
+        margin-bottom: -10%;
     }
     .email{
         position: relative;
-        left: 5px;
-        width: 50%;
-        margin-bottom: 5%;
+        left: 4%;
+        width: 55%;
+        height: 10%;
+        
     }
     .enviar{
         position: relative;
-        left: 20px;
-        margin-bottom: 5%;
+        margin-top: 28%;
+        right: 27%;
     }
 }
                             /*---------------------*/
