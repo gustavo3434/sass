@@ -121,25 +121,28 @@ img {
   align-content: center;
   line-height: 3rem;
   width: 88%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   margin-left: 6%;
   background-color: white;
-  border: solid black 3px;
 }
 .registro h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.registro p {
+  margin-bottom: -10%;
 }
 .registro .email {
   position: relative;
-  left: 5px;
-  width: 50%;
-  margin-bottom: 5%;
+  left: 4%;
+  width: 55%;
+  height: 10%;
 }
 .registro .enviar {
   position: relative;
-  left: 20px;
-  margin-bottom: 5%;
+  margin-top: 28%;
+  right: 27%;
 }
 
 /*---------------------*/
@@ -217,8 +220,8 @@ footer {
 /* Logo de WhatsApp flotante */
 .wsp {
   position: fixed;
-  bottom: 0;
-  left: 1030px;
+  bottom: 0px;
+  right: 0px;
 }
 
 .logo {
@@ -396,7 +399,7 @@ h2 {
     display: grid;
     margin-top: 3.5rem;
     grid-template-areas: "cat sub_nav orden";
-    grid-template-columns: 50% 25% 25%;
+    grid-template-columns: 35% 35% 35%;
     grid-template-rows: auto;
     border: solid rgba(128, 128, 128, 0.215) 1px;
   }
@@ -555,5 +558,34 @@ h2 {
   .nosotros p {
     font-size: 0.5rem;
     line-height: 35px;
+  }
+  /* Formulario de promociones */
+  .registro {
+    text-align: center;
+    align-content: center;
+    line-height: 3rem;
+    width: 88%;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    margin-left: 6%;
+    background-color: white;
+  }
+  .registro h2 {
+    font-size: 2.4rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  .registro p {
+    margin-bottom: -10%;
+  }
+  .registro .email {
+    position: relative;
+    left: 8%;
+    width: 70%;
+    height: 10%;
+  }
+  .registro .enviar {
+    position: relative;
+    margin-top: 28%;
+    right: 35%;
   }
 }/*# sourceMappingURL=estilo.css.map */

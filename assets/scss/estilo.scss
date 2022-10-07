@@ -145,7 +145,7 @@ h2{
         display: grid;
         margin-top: 3.5rem;
         grid-template-areas: "cat sub_nav orden";
-        grid-template-columns: 50% 25% 25%;
+        grid-template-columns: 35% 35% 35%;
         grid-template-rows: auto;
         border: solid $gris1 1px;
     }
@@ -333,5 +333,35 @@ h2{
             line-height: 35px;
         }
     }
+                            /* Formulario de promociones */
+.registro{
+    text-align: center;
+    align-content: center;
+    line-height: 3rem;
+    width: 88%;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    margin-left: 6%;
+    background-color: white;
+    h2{
+        font-size: 2.4rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    p{
+        margin-bottom: -10%;
+    }
+    .email{
+        position: relative;
+        left: 8%;
+        width: 70%;
+        height: 10%;
+        
+    }
+    .enviar{
+        position: relative;
+        margin-top: 28%;
+        right: 35%;
+    }
+}
     
 }
