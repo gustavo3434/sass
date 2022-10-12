@@ -70,6 +70,7 @@ $grisN: rgba(255,255,255, 0.7);
                 text-decoration: none;
                 font-size: 1.6rem;
                 font-weight: bold;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 &:hover{
                     font-size: 1.9rem;
                 }
@@ -85,8 +86,6 @@ img{
 
                     /*Galeria de las diferentes secciones*/
 .galeria_{            
-    margin: 3rem;
-    margin-left: 10%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -96,16 +95,17 @@ img{
         text-align: center;
     }
     div{
-        box-shadow: 3px 5px 10px black;
-        margin: 5px;
-        @include sizes(350px,30%);
+        box-shadow: 3px 5px 10px 3px rgba(128, 128, 128, 0.597);
+        @include sizes(380px,33.31%);
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
             a{
                 text-decoration: none;
-                color: black;
+                color: gray;
+                bottom: 10px;
+                font-family: Arial, Helvetica, sans-serif;
                 &:hover{
-                    color: rgba(0, 0, 0, 0.62);
+                    color: rgba(128, 128, 128, 0.597)
                 }
             }
             img{
@@ -127,5 +127,17 @@ img{
                 @include sizes(8%,40%);
             }
     }
+}
+#diez{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#veinte{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#treinta{
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
                     /*--------------------------------*/

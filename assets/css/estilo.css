@@ -54,6 +54,7 @@
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #galeria div div a:hover {
   font-size: 1.9rem;
@@ -67,8 +68,6 @@ img {
 /*-----------------------*/
 /*Galeria de las diferentes secciones*/
 .galeria_ {
-  margin: 3rem;
-  margin-left: 10%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -79,19 +78,20 @@ img {
   text-align: center;
 }
 .galeria_ div {
-  box-shadow: 3px 5px 10px black;
-  margin: 5px;
-  height: 350px;
-  width: 30%;
+  box-shadow: 3px 5px 10px 3px rgba(128, 128, 128, 0.597);
+  height: 380px;
+  width: 33.31%;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .galeria_ div a {
   text-decoration: none;
-  color: black;
+  color: gray;
+  bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .galeria_ div a:hover {
-  color: rgba(0, 0, 0, 0.62);
+  color: rgba(128, 128, 128, 0.597);
 }
 .galeria_ div img {
   height: 70%;
@@ -112,6 +112,21 @@ img {
 .galeria_ div div {
   height: 8%;
   width: 40%;
+}
+
+#diez {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#veinte {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#treinta {
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 /*--------------------------------*/
@@ -152,7 +167,6 @@ img {
 }
 .consultas div {
   padding: 1rem;
-  margin: 1rem;
   box-shadow: 2px 2px 4px black;
 }
 .consultas fieldset legend {
@@ -181,6 +195,7 @@ img {
 /* Footer*/
 footer {
   background-color: rgba(128, 128, 128, 0.215);
+  margin-top: 6rem;
 }
 
 .ig img {
@@ -274,6 +289,7 @@ body {
 .centrar {
   text-align: center;
   margin-top: 3rem;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .item {
@@ -308,8 +324,9 @@ body {
   display: grid;
   margin-top: 3.5rem;
   grid-template-areas: "cat sub_nav orden";
-  grid-template-columns: 60% 20% 20%;
-  grid-template-rows: auto;
+  grid-template-columns: 58% 20% 22%;
+  grid-template-rows: 40px;
+  font-family: "Courier New", Courier, monospace;
   border: solid rgba(128, 128, 128, 0.215) 1.5px;
 }
 .indice .cat { /* Indice */
@@ -317,15 +334,18 @@ body {
 }
 .indice .area-sub-menu { /* Sub menu para las categorias de productos  */
   grid-area: sub_nav;
+}
+.indice .area-sub-menu .sub {
+  height: 41px;
   border: solid rgba(128, 128, 128, 0.215) 1.5px;
-  height: 102%;
 }
 .indice .orden { /* Ordenamiento de productos  */
   grid-area: orden;
-  height: 40px;
+  width: 100.5%;
 }
-.indice .orden .ord {
-  height: 124%;
+.indice .orden .sub {
+  height: 41px;
+  border: solid rgba(128, 128, 128, 0.215) 1.5px;
 }
 
 /* -------------- */
@@ -336,41 +356,57 @@ h2 {
   margin: 5px;
 }
 
+.ind {
+  margin-bottom: 4rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
 /* Indice Promocion seccion Oferta*/
 .producto {
   position: absolute;
-  background-color: red;
+  background-color: rgb(205, 10, 10);
   font-weight: bold;
   color: white;
-  top: -1%;
-  left: -2%;
+  font-size: 1rem;
+  top: 0.2%;
+  left: 0.2%;
 }
 
-.titu { /*Indice seccion ofertas*/
-  margin-top: 7rem;
-  color: red;
-}
-
-.tit_ofer {
-  color: red;
+.tit_ofer { /*Indice seccion ofertas*/
+  color: rgb(205, 10, 10);
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 /*--------------------*/
 /* Forma Pago*/
 .forma_pago {
-  text-align: center;
   width: 90%;
   margin: 2rem;
   padding: 1rem;
 }
+.forma_pago h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: bold;
+}
 .forma_pago ul li {
   font-weight: bold;
+  line-height: 2rem;
   list-style-type: square;
+}
+.forma_pago .formaPago {
+  margin-left: 15%;
+}
+.forma_pago .formaPago h3 {
+  font-weight: bold;
 }
 
 /*---------------------*/
 /*Responsive > 1024px*/
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1020px) {
   /*Galeria de las diferentes secciones*/
   .galeria_ div {
     height: 40%;
@@ -378,15 +414,78 @@ h2 {
 }
 /*Responsive < 960px*/
 @media screen and (max-width: 960px) {
+  .indice {
+    display: grid;
+    margin-top: 3.5rem;
+    grid-template-areas: "cat sub_nav orden";
+    grid-template-columns: 45% 27.5% 27.5%;
+    grid-template-rows: 40px;
+    border: solid rgba(128, 128, 128, 0.215) 1px;
+  }
+  .indice .cat { /* Indice */
+    grid-area: cat;
+  }
+  .indice .area-sub-menu { /* Sub menu para las categorias de productos  */
+    grid-area: sub_nav;
+  }
+  .indice .area-sub-menu .sub {
+    height: 41px;
+    border: solid rgba(128, 128, 128, 0.215) 1.5px;
+  }
+  .indice .orden { /* Ordenamiento de productos  */
+    grid-area: orden;
+    width: 100.5%;
+  }
+  .indice .orden .sub {
+    height: 41px;
+    border: solid rgba(128, 128, 128, 0.215) 1.5px;
+  }
   /*Galeria y Indice Promocion seccion Oferta*/
-  .galeria_ div div {
-    height: 8%;
-    width: 60%;
+  .galeria_ {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .galeria_ .contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .galeria_ div {
+    box-shadow: 3px 5px 10px 3px rgba(128, 128, 128, 0.597);
+    height: 44%;
+    width: 33.31%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .galeria_ div a {
+    text-decoration: none;
+    color: gray;
+    bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .galeria_ div a:hover {
+    color: rgba(128, 128, 128, 0.597);
   }
   .galeria_ div img {
+    height: 70%;
     width: 75%;
     margin: 12%;
-    margin-top: 20%;
+    border-style: double;
+    color: rgba(128, 128, 128, 0.215);
+    box-shadow: 5px 8px 12px black;
+    cursor: pointer;
+  }
+  .galeria_ div img:hover {
+    border-style: double;
+    color: black;
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 18px 20px 60px black;
+  }
+  .galeria_ div div {
+    height: 8%;
+    width: 40%;
   }
 }
 /*Responsive < 768px*/
@@ -398,10 +497,30 @@ h2 {
   .indice {
     display: grid;
     margin-top: 3.5rem;
+    font-size: 0.8rem;
     grid-template-areas: "cat sub_nav orden";
-    grid-template-columns: 35% 35% 35%;
-    grid-template-rows: auto;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: 40px;
     border: solid rgba(128, 128, 128, 0.215) 1px;
+  }
+  .indice .cat { /* Indice */
+    margin-top: 3%;
+    grid-area: cat;
+  }
+  .indice .area-sub-menu { /* Sub menu para las categorias de productos  */
+    grid-area: sub_nav;
+  }
+  .indice .area-sub-menu .sub {
+    height: 41px;
+    border: solid rgba(128, 128, 128, 0.215) 1.5px;
+  }
+  .indice .orden { /* Ordenamiento de productos  */
+    grid-area: orden;
+    width: 100.5%;
+  }
+  .indice .orden .sub {
+    height: 41px;
+    border: solid rgba(128, 128, 128, 0.215) 1.5px;
   }
   /* Galeria Principal Index*/
   #galeria {
@@ -436,13 +555,21 @@ h2 {
   }
   /*Galeria e Indice Promocion seccion Oferta*/
   .galeria_ {
-    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .galeria_ .contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
   }
   .galeria_ div {
     box-shadow: 3px 5px 10px black;
-    margin: 5px;
-    width: 45%;
-    height: 45%;
+    height: 310px;
+    width: 50%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .galeria_ div div {
     height: 10%;
@@ -450,8 +577,8 @@ h2 {
   }
   .galeria_ div img {
     width: 75%;
+    height: 60%;
     margin: 12%;
-    margin-top: 25%;
   }
   /*---------------------*/
   .consultas label, .consultas input, .consultas textarea {
@@ -517,12 +644,21 @@ h2 {
   }
   /*Galeria y Indice Promocion seccion Oferta*/
   .galeria_ {
-    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .galeria_ .contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
   }
   .galeria_ div {
+    box-shadow: 3px 5px 10px black;
+    height: 380px;
     width: 100%;
-    height: 10%;
-    padding: 2px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .galeria_ div div {
     height: 10%;

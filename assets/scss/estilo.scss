@@ -11,6 +11,10 @@ $grisN: rgba(255,255,255, 0.7);
     padding: 0;
     box-sizing: border-box;
 }
+@mixin sizes ($height,$width) {
+    height:$height;
+    width:$width;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -20,6 +24,7 @@ body{
 .centrar{
     text-align: center;
     margin-top: 3rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 .item{
     font-size: 1rem;
@@ -50,23 +55,29 @@ body{
     display: grid;
     margin-top: 3.5rem;
     grid-template-areas: "cat sub_nav orden";
-    grid-template-columns: 60% 20% 20%;
-    grid-template-rows: auto;
+    grid-template-columns: 58% 20% 22%;
+    grid-template-rows: 40px;
+    font-family: 'Courier New', Courier, monospace;
     border: solid $gris1 1.5px;
     .cat{ /* Indice */
         grid-area: cat;
     }
     .area-sub-menu{ /* Sub menu para las categorias de productos  */
         grid-area: sub_nav;
-        border: solid $gris1 1.5px ;
-        height: 102%;
+        
+        .sub{
+            height: 41px;
+            border: solid $gris1 1.5px;
+        }
     }
     .orden{ /* Ordenamiento de productos  */
         grid-area: orden;
-        height: 40px;
-    .ord{
-        height: 124%;
-    }
+        width: 100.5%;
+        .sub{
+            height: 41px;
+            border: solid $gris1 1.5px;
+            
+        }
     }
 }
 /* -------------- */
@@ -76,42 +87,58 @@ h2{
     font-size: 2rem;
     margin: 5px;
 }
+.ind{
+    margin-bottom: 4rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
 
                     /* Indice Promocion seccion Oferta*/
 .producto{
     position: absolute;
-    background-color: red;
+    background-color: rgb(205, 10, 10);
     font-weight: bold;
     color: white;
-    top: -1%;
-    left: -2%;
+    font-size: 1rem;
+    top: 0.2%;
+    left: 0.2%;
 }
 
-.titu{ /*Indice seccion ofertas*/
-    margin-top: 7rem;
-    color: red;
-}
-.tit_ofer{
-    color: red;
+.tit_ofer{/*Indice seccion ofertas*/
+    color: rgb(205, 10, 10);
+    font-weight: bold;
+    font-size: 3rem;
 }
                             /*--------------------*/
                            
                                     /* Forma Pago*/
 .forma_pago{
-    text-align: center;
     width: 90%;
     margin: 2rem;
     padding: 1rem;
+    h2{
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 4rem;
+        font-weight: bold;
+    }
     ul{
         li{
             font-weight: bold;
+            line-height: 2rem;
             list-style-type: square;
+        }
+    }
+    .formaPago{
+        margin-left: 15%;
+        h3{
+            font-weight: bold;
         }
     }
 }
                                 /*---------------------*/
                                 /*Responsive > 1024px*/
-@media screen and (min-width:1150px)
+@media screen and (min-width:1020px)
 {
 /*Galeria de las diferentes secciones*/
     .galeria_{            
@@ -123,15 +150,77 @@ h2{
                                 /*Responsive < 960px*/
 @media screen and (max-width:960px) 
 {
-    /*Galeria y Indice Promocion seccion Oferta*/
-    .galeria_ div div {
-        height: 8%;
-        width: 60%;
+    .indice{
+        display: grid;
+        margin-top: 3.5rem;
+        grid-template-areas: "cat sub_nav orden";
+        grid-template-columns: 45% 27.5% 27.5%;
+        grid-template-rows: 40px;
+        border: solid $gris1 1px;
+        .cat{ /* Indice */
+            grid-area: cat;
+        }
+        .area-sub-menu{ /* Sub menu para las categorias de productos  */
+            grid-area: sub_nav;
+            
+            .sub{
+                height: 41px;
+                border: solid $gris1 1.5px;
+            }
+        }
+        .orden{ /* Ordenamiento de productos  */
+            grid-area: orden;
+            width: 100.5%;
+            .sub{
+                height: 41px;
+                border: solid $gris1 1.5px;
+                
+            }
+        }
     }
-    .galeria_ div img{
-        width: 75%;
-        margin: 12%;
-        margin-top: 20%;
+    /*Galeria y Indice Promocion seccion Oferta*/
+    .galeria_{            
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .contenedor{
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+        div{
+            box-shadow: 3px 5px 10px 3px rgba(128, 128, 128, 0.597);
+            @include sizes(44%,33.31%);
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                a{
+                    text-decoration: none;
+                    color: gray;
+                    bottom: 10px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    &:hover{
+                        color: rgba(128, 128, 128, 0.597)
+                    }
+                }
+                img{
+                    @include sizes(70%,75%);
+                    margin: 12%;
+                    border-style: double;
+                    color: $gris1;
+                    box-shadow: 5px 8px 12px black;
+                    cursor: pointer;
+                    &:hover{
+                        border-style: double;
+                        color: black;
+                        transform: scale(1.1,1.1);
+                        transition: all 0.5s ease-in-out;
+                        box-shadow: 18px 20px 60px black;
+                    }
+                }
+                div {
+                    @include sizes(8%,40%);
+                }
+        }
     }
 }
                             /*Responsive < 768px*/
@@ -144,10 +233,32 @@ h2{
     .indice{
         display: grid;
         margin-top: 3.5rem;
+        font-size: 0.8rem;
         grid-template-areas: "cat sub_nav orden";
-        grid-template-columns: 35% 35% 35%;
-        grid-template-rows: auto;
+        grid-template-columns: 35% 30% 35%;
+        grid-template-rows: 40px;
         border: solid $gris1 1px;
+        .cat{ /* Indice */
+            margin-top: 3%;
+            grid-area: cat;
+        }
+        .area-sub-menu{ /* Sub menu para las categorias de productos  */
+            grid-area: sub_nav;
+            
+            .sub{
+                height: 41px;
+                border: solid $gris1 1.5px;
+            }
+        }
+        .orden{ /* Ordenamiento de productos  */
+            grid-area: orden;
+            width: 100.5%;
+            .sub{
+                height: 41px;
+                border: solid $gris1 1.5px;
+                
+            }
+        }
     }
     /* Galeria Principal Index*/
     #galeria{
@@ -186,21 +297,28 @@ h2{
     }
     
     /*Galeria e Indice Promocion seccion Oferta*/
-    .galeria_{
-        margin-left: 15%;
+    .galeria_{            
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .contenedor{
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
         div{
             box-shadow: 3px 5px 10px black;
-            margin: 5px;
-            width: 45%;
-            height: 45%;
+            @include sizes(310px,50%);
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             div{
                 height: 10%;
                 width: 60%;
             }
             img{
                 width: 75%;
+                height: 60%;
                 margin: 12%;
-                margin-top: 25%;
             }
         }
         
@@ -285,12 +403,20 @@ h2{
 
     }
     /*Galeria y Indice Promocion seccion Oferta*/
-    .galeria_{
-        margin-left: 15%;
+    .galeria_{            
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .contenedor{
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
         div{
-            width: 100%;
-            height: 10%;
-            padding: 2px;
+            box-shadow: 3px 5px 10px black;
+            @include sizes(380px,100%);
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             div{
                 height: 10%;
                 width: 50%;
