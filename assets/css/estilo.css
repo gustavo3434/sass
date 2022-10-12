@@ -661,12 +661,13 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .galeria_ div div {
-    height: 10%;
-    width: 50%;
+    height: 7%;
+    width: 30%;
   }
   .galeria_ div img {
-    width: 75%;
+    width: 77%;
     margin: 10%;
+    margin-left: 12%;
     border-style: double;
     color: rgba(128, 128, 128, 0.215);
     box-shadow: 5px 8px 12px black;
