@@ -80,12 +80,13 @@ img {
 .galeria_ div {
   box-shadow: 3px 5px 10px 3px rgba(128, 128, 128, 0.597);
   height: 380px;
-  width: 33.31%;
+  width: 25%;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .galeria_ div a {
   text-decoration: none;
+  font-size: 0.8rem;
   color: gray;
   bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
@@ -246,29 +247,19 @@ footer {
 /*-------------------------------*/
 /* Nosotros */
 .hn, .nosotros p, .nosotros h3 {
-  background-color: rgba(255, 255, 255, 0.7);
-  border: inset 2px gray;
   font-size: 1.5rem;
-  width: 100%;
+  word-spacing: 2px;
+  text-align: center;
+  text-decoration: none;
+  width: 80%;
+  margin-left: 10%;
 }
 
-.nosotros {
-  background-image: url(/multimedia/playa.jpg); /* Uso de Background Img*/
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px;
-  padding: 50px 30px;
-  margin-top: 50px;
-}
 .nosotros h3 {
-  text-align: center;
-  word-spacing: 2px;
-  border-bottom: inset 0px rgba(255, 255, 255, 0.7);
+  font-weight: bold;
 }
 .nosotros p {
-  border: outset 2px gray;
+  font-size: 1.2rem;
 }
 
 /*---------------------*/
@@ -413,7 +404,7 @@ h2 {
   }
 }
 /*Responsive < 960px*/
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1019px) {
   .indice {
     display: grid;
     margin-top: 3.5rem;
@@ -566,7 +557,7 @@ h2 {
   }
   .galeria_ div {
     box-shadow: 3px 5px 10px black;
-    height: 310px;
+    height: 40%;
     width: 50%;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -655,7 +646,7 @@ h2 {
   }
   .galeria_ div {
     box-shadow: 3px 5px 10px black;
-    height: 380px;
+    height: 40%;
     width: 100%;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
