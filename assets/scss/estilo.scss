@@ -417,6 +417,9 @@ h2{
             @include sizes(40%,100%);
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            a{
+                font-size: 1rem;
+            }
             div{
                 height: 7%;
                 width: 30%;
@@ -446,21 +449,7 @@ h2{
             left: 55%;
         }
     }
-    /*Nosotros*/
-    .nosotros{
-        background-image: url(../multimedia/playa.jpg);/* Uso de Background Img*/
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 700px;
-            padding: 50px 30px;
-            margin-top: 50px;
-        p{
-            font-size: 0.5rem;
-            line-height: 35px;
-        }
-    }
+    
                                 /* Formulario de promociones */
     .registro{
         text-align: center;
