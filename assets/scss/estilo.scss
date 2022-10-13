@@ -148,7 +148,7 @@ h2{
     }
 }
                                 /*Responsive < 960px*/
-@media screen and (max-width:960px) 
+@media screen and (max-width:1019px) 
 {
     .indice{
         display: grid;
@@ -308,7 +308,7 @@ h2{
         }
         div{
             box-shadow: 3px 5px 10px black;
-            @include sizes(310px,50%);
+            @include sizes(40%,50%);
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             div{
@@ -414,7 +414,7 @@ h2{
         }
         div{
             box-shadow: 3px 5px 10px black;
-            @include sizes(380px,100%);
+            @include sizes(40%,100%);
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             div{
